@@ -15,8 +15,8 @@ app.use(express.json());
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/auth', authRoutes);
-app.use('/api', orderRoutes)
-app.use('/api/reviews', reviewsRoutes)
+app.use('/api', orderRoutes);
+app.use('/api/reviews', reviewsRoutes);
 
 
 app.listen(port, () => {
