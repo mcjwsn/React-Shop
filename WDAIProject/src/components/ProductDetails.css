@@ -1,0 +1,185 @@
+/* ProductDetails.css */
+
+.product-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.product-details-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-details-container p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-details-container input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-details-container input[type="number"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.product-details-container button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.product-details-container button:hover {
+    background: linear-gradient(135deg, #0056b3, #004080);
+    transform: translateY(-2px);
+}
+
+.product-details-container button:active {
+    transform: translateY(0);
+}
+
+.product-details-container .rating-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+}
+
+.product-details-container .rating-bar .green {
+    height: 100%;
+    background-color: #28a745;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.product-details-container .rating-bar .red {
+    height: 100%;
+    background-color: #dc3545;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-details-container .reviews-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-details-container .reviews-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-details-container .reviews-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-details-container .reviews-list li strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.product-details-container .reviews-list li p {
+    color: #555;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-details-container .reviews-list li small {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.product-details-container .add-review-section {
+    margin-top: 20px;
+}
+
+.product-details-container .add-review-section h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-details-container .add-review-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-details-container .add-review-section select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.product-details-container .add-review-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-details-container .add-review-section textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.product-details-container .add-review-section button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.product-details-container .add-review-section button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-2px);
+}
+
+.product-details-container .add-review-section button:active {
+    transform: translateY(0);
+}

@@ -1,0 +1,87 @@
+/* AdminReviews.css */
+
+.admin-reviews-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.admin-reviews-container h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-reviews-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-reviews-container ul li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-reviews-container ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-reviews-container ul li p {
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.admin-reviews-container ul li strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.admin-reviews-container ul li button {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.admin-reviews-container ul li button:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+    transform: translateY(-2px);
+}
+
+.admin-reviews-container .loading-message {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.admin-reviews-container .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.admin-reviews-container .no-reviews-message {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}

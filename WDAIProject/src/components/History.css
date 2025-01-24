@@ -1,0 +1,118 @@
+/* History.css */
+
+.history-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.history-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-container h2 {
+    color: #555;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.history-container p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.history-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-container li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.history-container li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.history-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.history-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.history-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.history-container .back-button {
+    background-color: #6c757d;
+}
+
+.history-container .back-button:hover {
+    background-color: #5a6268;
+}
+
+.history-container .download-button {
+    background-color: #28a745;
+}
+
+.history-container .download-button:hover {
+    background-color: #218838;
+}
+
+.history-container .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.history-container .loading-message {
+    text-align: center;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+
+@keyframes buttonPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.history-container button:active {
+    animation: buttonPulse 0.3s ease;
+}

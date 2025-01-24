@@ -1,0 +1,142 @@
+/* ProductList.css */
+
+.product-list-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.product-list-container h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-list-container .download-all-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.product-list-container .download-all-button:hover {
+    background: linear-gradient(135deg, #45a049, #3d8b40);
+    transform: translateY(-2px);
+}
+
+.product-list-container .search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-list-container .search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.product-list-container .category-select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-list-container .category-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.product-list-container .clear-filter-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+}
+
+.product-list-container .clear-filter-button:hover {
+    background: linear-gradient(135deg, #5a6268, #4a5056);
+    transform: translateY(-2px);
+}
+
+.product-list-container .product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list-container .product-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.product-list-container .product-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-list-container .product-list li strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.product-list-container .product-list li p {
+    color: #555;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-list-container .product-list li button {
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #008CBA, #0077a3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+}
+
+.product-list-container .product-list li button:hover {
+    background: linear-gradient(135deg, #0077a3, #006080);
+    transform: translateY(-2px);
+}
+
+.product-list-container .no-products-message {
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}
