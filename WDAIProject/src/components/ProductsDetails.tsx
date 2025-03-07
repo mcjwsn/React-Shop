@@ -91,13 +91,6 @@ const ProductDetails = ({ product, onAddToCart, userId }) => {
             <p>Cena: {product.price} zł</p>
             <p>Dostępna ilość: {product.available_quantity}</p>
             <p>Średnia ocena: {renderStars(averageRating)}</p>
-            <input
-                type="number"
-                value={quantity}
-                min="1"
-                max={product.available_quantity}
-                onChange={(e) => setQuantity(Number(e.target.value))}
-            />
             <button onClick={() => onAddToCart(product, quantity)}>Dodaj do koszyka</button>
 
             <h2>Opinie</h2>
