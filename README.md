@@ -7,7 +7,7 @@ Modern, intuitive online store that allows users to browse products, manage thei
 ✅ **Homepage** with product list and search functionality  
 ✅ **Product List** (search, category filtering)  
 ✅ **Product Details** (description, availability, reviews)  
-✅ **Product comments and rates**
+✅ **Product comments and rates**   
 ✅ **Shopping Cart** (add/remove products, checkout)  
 ✅ **Order History**  
 ✅ **User Registration & Login** (JWT authentication, session management)  
