@@ -23,6 +23,7 @@ Modern, intuitive online store that allows users to browse products, manage thei
 - 🏗️ React Router DOM
 - 📡 Axios
 - 🎨 Material UI
+- ⚡ Vite (for fast development and build process)
 
 ### 💾 Backend
 - 🚀 Express.js
