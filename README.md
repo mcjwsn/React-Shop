@@ -78,7 +78,7 @@ Modern, intuitive online store that allows users to browse products, manage thei
 ## 🚀 Installation & Setup
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/mcwsn/React-Shop.git
+   git clone https://github.com/mcjwsn/React-Shop.git
    cd React-Shop
    ```
 2. **Install dependencies**
