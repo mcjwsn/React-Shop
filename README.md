@@ -1,81 +1,131 @@
-# WDAIProject
-AGH WDAI summarizing Project
-Setup projektu
-Projekt jest zbudowany przy użyciu React i Node.js z Express.
-Frontend
-•	React
-•	React DOM
-•	React Router DOM
-•	Axios 
-Backend
-•	Express.js
-•	SQLite
-•	JSON Web Token (JWT)
-•	Middleware autoryzacji użytkownika
-•	CORS
-•	Bcrypt
-Struktura
-Backend:
+# 🛍️ Online React Shop
+
+## 📌 Project Description
+Modern, intuitive online store that allows users to browse products, manage their cart, place orders, add opinions and comments about products. The application was developed as part of an academic project and utilizes popular frontend and backend technologies. Data is fetched from local SQLite database. Main site has been tweaked with unusual js animation.
+
+## 🎯 Key Features
+✅ **Homepage** with product list and search functionality  
+✅ **Product List** (search, category filtering)  
+✅ **Product Details** (description, availability, reviews)  
+✅ **Product comments and rates**
+✅ **Shopping Cart** (add/remove products, checkout)  
+✅ **Order History**  
+✅ **User Registration & Login** (JWT authentication, session management)  
+✅ **Admin Panel** (moderating product reviews)  
+✅ **User Roles & Permissions** (admin, authenticated user) 
+
+
+---
+
+## 🛠️ Technologies Used
+### 🖥️ Frontend
+- ⚛️ React
+- 🏗️ React Router DOM
+- 📡 Axios
+- 🎨 Material UI
+
+### 💾 Backend
+- 🚀 Express.js
+- 🗄️ SQLite
+- 🔐 JSON Web Token (JWT)
+- 🔑 Bcrypt
+- 🔄 CORS
+- 🛡️ Authentication Middleware
+
+---
+
+## 📂 Project Structure
+### 📦 Backend
+```bash
 /server
-	/controllers
-		/authControllers	#kontrola logowania
-		/productControllers	#obsługa produktów
-		/reviewsControllers	#pobieranie wszystkich ocen
-		/userControllers	#obsługa użytkowników
-	/middleware
-		/middleware	#obsługa adminów i autoryzacji
-	/routes		# Metody współpracy z bazą danych(post,get,delete…)
-		/authRoutes	
-		/orderRoutes
-		/productRoutes
-		/reviewsRoutes
-		/userRoutes
-	database.db # baza sqlite
-db.js 	# inicjalizacja bazy
-server.js	# główny plik serwera obsługujący ścieżki
-Frontend
+  ├── controllers
+  │   ├── authControllers.js      # Login management
+  │   ├── productControllers.js   # Product handling
+  │   ├── reviewsControllers.js   # Fetching product reviews
+  │   ├── userControllers.js      # User management
+  ├── middleware
+  │   ├── authMiddleware.js       # Authentication handling
+  ├── routes
+  │   ├── authRoutes.js
+  │   ├── orderRoutes.js
+  │   ├── productRoutes.js
+  │   ├── reviewsRoutes.js
+  │   ├── userRoutes.js
+  ├── database.db                 # SQLite database
+  ├── db.js                       # Database initialization
+  ├── server.js                   # Main server file
+```
+
+### 🎨 Frontend
+```bash
 /src
-	/App.tsx	#główny komponent
-	/main.tsx	#wywołuje główny komponent
-	/FakeApp.tsx	#inna implementacja z react-router-dom
-	/components
-		/AdminReviews	# usuwanie ocen przez admina
-		/Cart			#koszyk
-		/ErrorBoundary	# obsluga bledow
-		/History		# historia zamowien
-		/Login			# logowanie
-		/ProductDetails	# opisy produktow
-		/ProductList		# lista produktow
-		/Register		# rejstracja
-index.html	# plik html obslugujacy strone
-Podział pracy
-Backend: Maciej Wiśniewski
-Frontend: Maciej Wiśniewski
-Grafika: DeepSeek > Maciej Wiśniewski
+  ├── App.tsx                     # Main component
+  ├── main.tsx                    # Application entry point
+  ├── components
+  │   ├── AdminReviews.tsx        # Admin review moderation
+  │   ├── Cart.tsx                # Shopping cart
+  │   ├── ErrorBoundary.tsx       # Error handling
+  │   ├── History.tsx             # Order history
+  │   ├── Login.tsx               # Login page
+  │   ├── ProductDetails.tsx      # Product details
+  │   ├── ProductList.tsx         # Product list
+  │   ├── Register.tsx            # User registration
+  ├── index.html                   # Main HTML page
+```
 
-Dokumentacja Postman:
-POST http://localhost:5000/api/users # rejstracja usera
-POST http://localhost:5000/api/auth/login # logowanie admin/user
-GET http://localhost:5000/api/reviews/ # pobieranie wszystkich ocen
-GET http://localhost:5000/api/orders # pobieranie wszystkich zamówień
-POST http://localhost:5000/api/orders # dodawanie zamówienia
-GET http://localhost:5000/api/orders/5 # pobieranie zamówienia po id
-GET  http://localhost:5000/api/products # pobieranie produktów
-GET http://localhost:5000/api/products/1 # pobieranie produktów po id
-POST http://localhost:5000/api/products # dodawanie produktu
-PUT http://localhost:5000/api/products/6 # edytowanie produktów po id
-DELETE http://localhost:5000/api/products/7 # usuwanie produktów po id
-GET http://localhost:5000/api/products/1/reviews/ # pobieranie ocen po id
-POST http://localhost:5000/api/products/4/reviews # dodawanie ocen po id
-DELETE http://localhost:5000/api/products/reviews/22 # usuwanie opinii po id
-GET http://localhost:5000/api/users/ # pobieranie userów
-GET http://localhost:5000/api/users/1 # pobieranie userów po id
-POST http://localhost:5000/api/users/ # dodawanie userów
-PUT http://localhost:5000/api/users/20 # edytowanie usersów
-DELETE http://localhost:5000/api/users/20 # usuwanie userów
-GET http://localhost:5000/api/users/1/isAdmin # sprawdzanie czy uzytkownik jest adminem
+---
 
+## 🚀 Installation & Setup
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/user/WDAIProject.git
+   cd WDAIProject
+   ```
+2. **Install dependencies**
+   ```sh
+   cd server
+   npm install
+   cd ../frontend
+   npm install
+   ```
+3. **Start the backend**
+   ```sh
+   cd server
+   npm start
+   ```
+4. **Start the frontend**
+   ```sh
+   cd frontend
+   npm start
+   ```
+5. **Open your browser:** `http://localhost:3000`
 
+---
 
+## 🔌 API (Postman Documentation)
+### 👤 Users
+- `POST /api/users` - Register a new user
+- `POST /api/auth/login` - User login
+- `GET /api/users/` - Retrieve users
 
-	
+### 🛍️ Products
+- `GET /api/products` - Fetch all products
+- `POST /api/products` - Add a new product
+- `PUT /api/products/:id` - Edit a product
+- `DELETE /api/products/:id` - Delete a product
+
+### 🛒 Shopping Cart
+- `POST /api/orders` - Create an order
+- `GET /api/orders` - Retrieve all orders
+
+### ⭐ Reviews
+- `GET /api/products/:id/reviews` - Fetch product reviews
+- `POST /api/products/:id/reviews` - Add a review
+- `DELETE /api/reviews/:id` - Delete a review
+
+---
+
+## 👨‍💻 Authors
+- **Maciej Wiśniewski** - Backend, Frontend, Graphics  
+📌 Project developed for AGH WDAI course 🎓
+
