@@ -78,8 +78,8 @@ Modern, intuitive online store that allows users to browse products, manage thei
 ## 🚀 Installation & Setup
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/user/WDAIProject.git
-   cd WDAIProject
+   git clone https://github.com/mcwsn/React-Shop.git
+   cd React-Shop
    ```
 2. **Install dependencies**
    ```sh
