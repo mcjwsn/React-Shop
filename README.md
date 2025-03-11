@@ -73,34 +73,6 @@ Modern, intuitive online store that allows users to browse products, manage thei
   │   ├── Register.tsx            # User registration
   ├── index.html                   # Main HTML page
 ```
-
----
-
-## 🚀 Installation & Setup
-1. **Clone the repository**
-   ```sh
-   git clone https://github.com/mcjwsn/React-Shop.git
-   cd React-Shop
-   ```
-2. **Install dependencies**
-   ```sh
-   cd server
-   npm install
-   cd ../frontend
-   npm install
-   ```
-3. **Start the backend**
-   ```sh
-   cd server
-   npm start
-   ```
-4. **Start the frontend**
-   ```sh
-   cd frontend
-   npm start
-   ```
-5. **Open your browser:** `http://localhost:3000`
-
 ---
 
 ## 🔌 API (Postman Documentation)
